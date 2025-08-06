@@ -1,10 +1,5 @@
-import type { NextConfig } from "next";
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  srcDir: "src",
+  srcDir: "src", // ✅ This is top-level (not inside experimental)
 };
 
 export default nextConfig;
-
