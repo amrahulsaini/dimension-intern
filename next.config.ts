@@ -1,5 +1,6 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  srcDir: "src", // ✅ This is top-level (not inside experimental)
+  // No need for appDir or srcDir unless you really changed folder layout
 };
 
 export default nextConfig;
