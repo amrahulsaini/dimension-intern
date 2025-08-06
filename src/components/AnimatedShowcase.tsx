@@ -6,7 +6,7 @@ import { Shield, Zap, Globe, Lock, Users, Sparkles, ChevronRight, Star, Heart, M
 
 const AnimatedShowcase = () => {
   const [activeFeature, setActiveFeature] = useState(0);
-  const [notifications, setNotifications] = useState<Array<{id: number, text: string, icon: any}>>([]);
+  const [notifications, setNotifications] = useState<Array<{id: number, text: string, icon: React.ElementType}>>([]);
 
   const features = React.useRef([
     {
@@ -146,7 +146,7 @@ const AnimatedShowcase = () => {
                       </div>
                       <div className="bg-gray-800 rounded p-3">
                         <div className="text-xs text-gray-400 mb-2">Original Message:</div>
-                        <div className="text-white">"Hello, how are you?"</div>
+                        <div className="text-white">&quot;Hello, how are you?&quot;</div>
                       </div>
                       <div className="text-center">
                         <div className="text-2xl animate-spin">🔐</div>
